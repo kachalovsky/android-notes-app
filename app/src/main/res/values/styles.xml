@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NoteCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/primaryDarkColor </item>
+    </style>
+
+    <style name="NoteLabelTheme" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/primaryDarkColor</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="NoteButtonTheme" parent="@android:style/Widget.Button">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+</resources>
