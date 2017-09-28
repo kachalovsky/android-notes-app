@@ -89,9 +89,11 @@ class TaskManager {
     public static void setCheckedNoteById(Context context, Date selectedDate, String id, boolean isChecked) {
         ArrayList<NoteModel> tasks = new ArrayList<NoteModel>(getTasksForDate(context, selectedDate));
         int noteIndex = findNoteIndexById(tasks, id);
-        NoteModel note = tasks.get(noteIndex);
-        note.isDone = isChecked;
-        writeTasksForDate(context, selectedDate, tasks);
+        if (noteIndex != -1) {
+            NoteModel note = tasks.get(noteIndex);
+            note.isDone = isChecked;
+            writeTasksForDate(context, selectedDate, tasks);
+        }
     }
 
 

@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements NoteRecyclerDeleg
         calendar.set(Calendar.MONTH, month);
         calendar.set(Calendar.DAY_OF_MONTH, day);
         calendar.clear(Calendar.HOUR_OF_DAY);
+        calendar.clear(Calendar.HOUR);
         calendar.clear(Calendar.AM_PM);
         calendar.clear(Calendar.MINUTE);
         calendar.clear(Calendar.SECOND);
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements NoteRecyclerDeleg
         Calendar cal = Calendar.getInstance();
         cal.setTime(from);
         cal.clear(Calendar.HOUR_OF_DAY);
+        cal.clear(Calendar.HOUR);
         cal.clear(Calendar.AM_PM);
         cal.clear(Calendar.MINUTE);
         cal.clear(Calendar.SECOND);
